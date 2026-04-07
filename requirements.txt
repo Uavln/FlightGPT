@@ -1,0 +1,33 @@
+# === PyTorch & related (CUDA 12.4) ===
+# 手动安装pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+# torch==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+# torchvision==0.21.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+# torchaudio==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+
+# === Transformers & RL ===
+transformers==4.50.0
+trl==0.17.0
+peft==0.15.0
+
+# === Open-R1 editable install ===
+-e open-r1-multimodal/
+
+
+# === Logging & visualization ===
+wandb==0.18.3
+tensorboardx
+
+# === Utilities ===
+qwen_vl_utils
+babel
+python-Levenshtein
+matplotlib
+pycocotools
+openai
+httpx[socks]
+opencv-python
+rasterio
+shapely
+supervision
+math_verify
+
