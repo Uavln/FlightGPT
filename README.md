@@ -23,10 +23,16 @@ This project depends on multiple models and tool libraries. It is recommended to
 ### Install Conda Environment
 
 ```bash
-- conda create -n flightgpt python=3.11
-- conda activate flightgpt
+conda create -n flightgpt python=3.11
+conda activate flightgpt
+```
 
-- pip install -r requirements.txt
+```bash
+pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+pip install -r requirements.txt
+
+cd open-r1-multimodal
+pip install -e .
 ```
 
 ---
